@@ -22,27 +22,27 @@ html {
  }
 
  .navigation a {
+     display: inline-block;
     color: aliceblue;
     font-size: 2rem;
     padding: 1rem 1rem;
     text-decoration: none;
-    background-color: rgba(255, 123, 0, 0.664);
+    background-color: rgba(255, 145, 0, 0.795);
+    border-radius: 1px;
     transition: all .3s;
  }
 
  .navigation a:hover {
-    color: aliceblue;
-    font-size: 2rem;
-    padding: 1rem 1rem;
-    text-decoration: none;
-    background-color: rgb(255, 123, 0);
+    border-radius: 5px;
+    background-color: rgba(255, 123, 0, 0.377);
+    transform: translateY(2px);
  }
 
   header h1 {
     font-size: 5rem;
     background-color: rgba(100, 56, 141, 0.459);
     padding: .5rem;
-    border-radius: 4px;
+    border-radius: 2px;
     position: absolute;
     top: 50%;
     right: 50%;
@@ -52,12 +52,11 @@ html {
   }
 
   header h1:hover {
-    font-size: 5rem;
     background-color: rgb(100, 56, 141);
     border-radius: 1px;
     transform: translateY(-4px);
     box-shadow: 3px 4px 10px rgb(22, 22, 22);
-    color: aliceblue;
+    color: white;
   }
 
   header img {
@@ -88,27 +87,34 @@ html {
     text-transform: uppercase;
 }
 
-.container {
-    border-top: 1px solid rgba(211, 194, 211, 0.233);
-    margin: 0 10rem;
-}
-
 .container__about {
     color: rgb(17, 21, 31);
-    margin: 0;
-    height: 40vh;
+    height: 60vh;
+    margin: 10rem 12rem 11rem;
     text-align: center;
     background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.801), rgb(255, 255, 255));
 }
 
 .container__about p {
     margin: 0;
-    padding: 1rem 10rem;
+    padding: 2rem 10rem;
 }
 
-.container__myHobbys {
+.container__about img {
+    height: 150px;
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+
+.border__hobbys {
+    border-top: 1px solid rgba(211, 194, 211, 0.274);
+    padding-top: 8rem;
+    margin: 0 5rem 10rem;
+}
+
+.container__cards {
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 26% 26% 26%;
     gap: 1rem;
     justify-content: center;
     height: 55vh;
@@ -124,6 +130,11 @@ html {
     transition: all .5;
 }
 
+.card i{
+    margin-top: 1rem;
+    font-size: 4.6rem;
+}
+
 .card:hover {
     background-image: linear-gradient(to bottom,rgba(72, 0, 189, 0.788), white);
     color: rgb(255, 255, 255);
@@ -136,7 +147,26 @@ html {
     background-image: linear-gradient(to top, rgba(255, 0, 0, 0.247), white);
 }
 
+.container__education .left__paragraph {
+    display:inline-block;
+    line-height: 2rem;
+    width: 27%;
+    padding: 5rem 3.5rem 5rem 3.5rem;
+    position: absolute;
+    right: 50%;
+}
+
+.container__education .right__paragraph {
+    display:inline-block;
+    line-height: 2rem;
+    width: 27%;
+    padding: 5rem;
+    position: absolute;
+    left: 50%;
+}
+
 .container__projects {
+    padding-top: 2rem;
     background-image: linear-gradient(to top, rgba(72, 0, 189, 0.788), rgba(255, 0, 0, 0.247));
-    height: 96vh;
+    height: 100vh;
 }
