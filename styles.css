@@ -13,7 +13,30 @@ html {
     margin: 0;
   }
 
-  /* HEADER */
+  /* NAVIGATION & HEADER */
+
+ .navigation {
+     position: absolute;
+     top: 5%;
+     right: 5%;
+ }
+
+ .navigation a {
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    background-color: rgba(255, 123, 0, 0.664);
+    transition: all .3s;
+ }
+
+ .navigation a:hover {
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    background-color: rgb(255, 123, 0);
+ }
 
   header h1 {
     font-size: 5rem;
@@ -54,6 +77,66 @@ html {
     color: orange;
 }
 
-/* ABOUT ME */
+/* MAIN SECTION */
 
+.heading__secondary {
+    text-align: center;
+    margin: 0;
+    padding: 3rem 2rem 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 
+.container {
+    border-top: 1px solid rgba(211, 194, 211, 0.233);
+    margin: 0 10rem;
+}
+
+.container__about {
+    color: rgb(17, 21, 31);
+    margin: 0;
+    height: 40vh;
+    text-align: center;
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.801), rgb(255, 255, 255));
+}
+
+.container__about p {
+    margin: 0;
+    padding: 1rem 10rem;
+}
+
+.container__myHobbys {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 1rem;
+    justify-content: center;
+    height: 55vh;
+    /* border-top: 1px solid rgba(212, 212, 212, 0.336);
+    margin: 0 1rem; */
+}
+
+.card {
+    margin: 1.5rem 0;
+    padding: 0 2rem 4.5rem;
+    background-image: linear-gradient(to bottom,rgba(255, 0, 0, 0.418), white);
+    text-align: center;
+    transition: all .5;
+}
+
+.card:hover {
+    background-image: linear-gradient(to bottom,rgba(72, 0, 189, 0.788), white);
+    color: rgb(255, 255, 255);
+}
+
+.container__education {
+    margin-top: 2rem;
+    padding: 1rem 8rem;
+    height: 96vh;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.247), white);
+}
+
+.container__projects {
+    background-image: linear-gradient(to top, rgba(72, 0, 189, 0.788), rgba(255, 0, 0, 0.247));
+    height: 96vh;
+}
