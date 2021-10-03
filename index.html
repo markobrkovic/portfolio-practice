@@ -35,14 +35,14 @@
       <aside class="creditAuthor__header">
         Photo by
         <a
-          class="link"
+          class="link__header"
           href="https://unsplash.com/@fakurian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
         >
           Fakurian Design</a
         >
         on
         <a
-          class="link"
+          class="link__header"
           href="https://unsplash.com/t/3d-renders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
         >
           Unsplash
@@ -107,8 +107,13 @@
       <section class="container__education">
         <h2 class="heading__secondary" id="education">Education</h2>
         <ul class="left__paragraph">
-          <li>Elementary school "OS Milos Crnjanski" in Serbia</li>
-          <li>Technical secondary school in Germany</li>
+          <li>
+            Elementary school "OS Milos Crnjanski" in Serbia
+            <!-- <i class="far fa-clock"></i>
+            8 years -->
+          </li>
+          <li>Middle school in Munich</li>
+          <li>Technical secondary school in Munich</li>
         </ul>
         <ul class="right__paragraph">
           <li>
@@ -120,7 +125,41 @@
       </section>
 
       <section class="container__projects" id="projects">
-        <h2 class="heading__secondary">Current and Future Projects</h2>
+        <h2 class="heading__secondary projects__box--header">
+          Current and Future Projects
+        </h2>
+        <p class="projects__box--first-1">
+          <a class="link" href="https://github.com">Project Primus</a>
+        </p>
+        <i class="far fa-clock projects__box--first-2"></i>
+
+        <p class="projects__box--second-1">
+          <a class="link" href="https://github.com">Project Andra</a>
+        </p>
+        <i class="far fa-calendar-alt projects__box--second-2"></i>
+
+        <p class="projects__box--third-1">
+          <a class="link" href="https://github.com">Project Tertius</a>
+        </p>
+        <i class="fas fa-hourglass-start projects__box--third-2"></i>
+      </section>
+
+      <section class="container__contact">
+        <div class="contact__background">
+          <h2 class="heading__secondary contact__box--header">
+            Contact me from here
+          </h2>
+          <h2 class="heading__secondary contact__box--header--2">Or at</h2>
+          <form class="contact__box--form" action="#">
+            <input type="text" placeholder="Write your message here" />
+          </form>
+          <button class="btn contact__btn">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <i class="fab fa-google"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
       </section>
     </main>
   </body>
