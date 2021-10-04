@@ -9,7 +9,6 @@ html {
   
   body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     margin: 0;
   }
 
@@ -21,13 +20,11 @@ html {
       text-transform: uppercase;
       border: none;
       color: white;
-      background: rgba(72, 0, 189, 0.788);
       transition: all .3s;
   }
 
   .btn:hover {
     cursor: pointer;
-    background:   rgb(72, 0, 189);
     border-radius: 3px;
   }
 
@@ -48,7 +45,7 @@ html {
      display: inline-block;
     color: aliceblue;
     font-size: 2rem;
-    padding: 1rem 1rem;
+    padding: 1rem;
     text-decoration: none;
     background-color: rgba(255, 145, 0, 0.795);
     border-radius: 1px;
@@ -296,6 +293,7 @@ html {
     grid-row-start: 2;
     grid-row-end: 5;
     margin-left: 2rem;
+    margin-right: 2rem;
     border: none;
     border-radius: 5px;
     background-color: rgba(13, 103, 182, 0.384);
@@ -306,7 +304,9 @@ html {
     height: 100%;
     border: none;
     border-radius: 5px;
-    background-color: rgba(240, 248, 255, 0.384);
+    
+    background-color: rgba(13, 103, 182, 0.521);
+    box-shadow: inset 1rem black;
 }
 
 .contact__btn {
