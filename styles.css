@@ -403,15 +403,26 @@ html {
     color: blanchedalmond;
 }
 
+.practice__buttons {
+    text-align: center;
+}
+
 .practice__buttons__background {
-    background: rgb(13, 74, 143);
+    background-image: linear-gradient(to right, rgb(0, 102, 255), rgb(255, 238, 0));
     display: flex;
     justify-content: center;
+    background-clip: text;
+    width: 10rem;
+    height: 5rem;
 }
 
-.practice__buttons__btn--gradientHover {
+.practice__buttons__btn--gradient {
     background-color: transparent;
     border: transparent;
-    color: white;
+    font-size: 2rem;
+    transition: all .3s ease-in-out;
 }
 
+.practice__buttons__btn--gradient:hover {
+    transform: scale(1.2);
+}
