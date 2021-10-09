@@ -389,3 +389,40 @@ html {
     transform: translate(1.5rem, .5rem) scale(1.5);
     color: rgba(13, 103, 182, 0.993);
 }
+
+.practice {
+    background-color: rgb(20, 20, 20);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.practice__buttons__heading {
+    margin-top: 0;
+    padding-top: 1rem;
+    color: blanchedalmond;
+}
+
+.practice__buttons {
+    text-align: center;
+}
+
+.practice__buttons__background {
+    background-image: linear-gradient(to right, rgb(0, 102, 255), rgb(255, 238, 0));
+    display: flex;
+    justify-content: center;
+    background-clip: text;
+    width: 10rem;
+    height: 5rem;
+}
+
+.practice__buttons__btn--gradient {
+    background-color: transparent;
+    border: transparent;
+    font-size: 2rem;
+    transition: all .3s ease-in-out;
+}
+
+.practice__buttons__btn--gradient:hover {
+    transform: scale(1.2);
+}
