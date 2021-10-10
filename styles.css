@@ -408,21 +408,62 @@ html {
 }
 
 .practice__buttons__background {
-    background-image: linear-gradient(to right, rgb(0, 102, 255), rgb(255, 238, 0));
-    display: flex;
-    justify-content: center;
-    background-clip: text;
-    width: 10rem;
-    height: 5rem;
-}
+    background-image: linear-gradient(red, blue);
+    transition: background-image 0.5s linear;
+  }
+
+.practice__buttons__background:hover {
+    background-image: linear-gradient(green, orange);
+  }
 
 .practice__buttons__btn--gradient {
-    background-color: transparent;
-    border: transparent;
-    font-size: 2rem;
-    transition: all .3s ease-in-out;
-}
+    display: block;
+    width: 150px;
+    background: linear-gradient(90deg,#ffffff 3%,#ffffff 47%,#FFFF00 53%,#FFA500 72%,#F14444 77%,#D53567 88%,#9A109A 97%);
+    background-size: 200% 100%;
+    background-position: left center;
+    text-align: center;
+    padding: 13px 20px;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,0.001);
+    transition: 256ms all;
+    position: relative;
+    cursor: pointer;
+  }
 
 .practice__buttons__btn--gradient:hover {
-    transform: scale(1.2);
+    background-color: #4CAF50;
+    color: #fff;
+  }
+
+.practice__buttons__btn--gradient:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(90deg,#ffffff 3%,#ffffff 47%,#FFFF00 53%,#FFA500 72%,#F14444 77%,#D53567 88%,#9A109A 97%);
+    transition: 256ms all;
+    z-index: -1;
+    background-size: 200% 100%;
+    background-position: left center;
+  }
+
+  .practice__buttons__btn--gradient:after {
+    background: rgb(24,24,24);
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+  }
+
+  .practice__buttons__btn--gradient,
+.practice__buttons__btn--gradient:before {
+  background-position: right center;
 }
